@@ -1,1 +1,1 @@
-Build progress should made known here
+General app info
