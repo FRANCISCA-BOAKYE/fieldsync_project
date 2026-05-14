@@ -1,8 +1,12 @@
 {
-  "dependencies": {
-    "@apollo/client": "^4.1.9",
-    "@jridgewell/gen-mapping": "^0.3.13",
-    "graphql": "^16.14.0",
-    "react-router-dom": "^7.15.0"
+  "name": "fieldsync-project",
+  "private": true,
+  "workspaces": [
+    "frontendui",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace frontendui",
+    "build": "npm run build --workspace frontendui"
   }
 }
