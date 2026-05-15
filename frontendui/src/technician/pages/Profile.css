@@ -1,0 +1,281 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.profile-card {
+  width: min(100%, 760px);
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(16, 35, 63, 0.12);
+  padding: 28px;
+}
+
+.profile-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.profile-card-header h1 {
+  margin: 0;
+  font-size: 1.95rem;
+  color: #10233f;
+}
+
+.profile-note {
+  margin: 10px 0 0;
+  color: #5b6c84;
+  font-size: 0.95rem;
+}
+
+.profile-header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn,
+.profile-signout,
+.confirm-btn,
+.cancel-btn {
+  border-radius: 14px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #1b9c47;
+  color: #ffffff;
+  padding: 12px 18px;
+  min-width: 130px;
+}
+
+.primary-btn--save {
+  background: #2563eb;
+}
+
+.secondary-btn,
+.cancel-btn {
+  background: #e5e7eb;
+  color: #10233f;
+  padding: 12px 18px;
+}
+
+.profile-summary {
+  display: grid;
+  gap: 18px;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+  margin-top: 28px;
+}
+
+.profile-avatar-wrapper {
+  position: relative;
+  width: 92px;
+  height: 92px;
+}
+
+.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1b9c47;
+}
+
+.avatar-action {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.profile-details {
+  min-width: 0;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #10233f;
+}
+
+.profile-role {
+  margin: 6px 0 0;
+  color: #53627c;
+}
+
+.status-row {
+  margin-top: 14px;
+}
+
+.profile-badge {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1b9c47;
+  background: #def3de;
+}
+
+.profile-select,
+.profile-input {
+  width: 100%;
+  border: 1px solid #d2d6dc;
+  border-radius: 14px;
+  background: #f9fafb;
+  color: #10233f;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+}
+
+.profile-input--name {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.profile-input--stat {
+  width: 100%;
+  min-width: 120px;
+}
+
+.profile-stats {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.profile-stat {
+  display: grid;
+  gap: 10px;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+}
+
+.profile-stat strong {
+  font-size: 1.6rem;
+  color: #10233f;
+}
+
+.profile-stat span {
+  color: #5b6c84;
+  font-size: 0.95rem;
+}
+
+.profile-contact {
+  margin-top: 28px;
+  display: grid;
+  gap: 16px;
+}
+
+.profile-field {
+  display: grid;
+  gap: 8px;
+}
+
+.profile-field label {
+  font-size: 0.95rem;
+  color: #6d7a8f;
+}
+
+.profile-field p {
+  margin: 0;
+  padding: 14px 16px;
+  background: #f4f7fb;
+  border-radius: 14px;
+  color: #10233f;
+  font-weight: 600;
+}
+
+.profile-signout {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
+  background: rgba(16, 24, 40, 0.55);
+  padding: 20px;
+}
+
+.modal {
+  width: min(100%, 420px);
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 32px 80px rgba(16, 35, 63, 0.2);
+}
+
+.modal h2 {
+  margin: 0 0 12px;
+  color: #10233f;
+}
+
+.modal p {
+  margin: 0 0 24px;
+  color: #5b6c84;
+  line-height: 1.6;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.confirm-btn {
+  background: #dc2626;
+  color: #ffffff;
+  padding: 12px 18px;
+  min-width: 140px;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  color: #10233f;
+  padding: 12px 18px;
+  min-width: 100px;
+}
+
+.profile-loading {
+  width: 100%;
+  padding: 48px 0;
+  text-align: center;
+  color: #53627c;
+}
