@@ -1,7 +1,7 @@
-export default function Dashboard() {
+function Dashboard() {
   return (
-    <section>
-      <h1>Dashboard</h1>
-    </section>
+    <div className="text-3xl font-bold text-blue-600">Admin Dashboard</div>
   );
 }
+
+export default Dashboard;

@@ -1,7 +1,22 @@
-import { adminRoutes } from "./adminRoutes.jsx";
-import { clientRoutes } from "./clientRoutes.jsx";
-import { technicianRoutes } from "./technicianRoutes.jsx";
+import { useRoutes, Navigate } from "react-router-dom";
 
-export const routes = [...adminRoutes, ...clientRoutes, ...technicianRoutes];
+import { adminRoutes } from "./adminRoutes";
+import { clientRoutes } from "./clientRoutes";
+import { technicianRoutes } from "./technicianRoutes";
 
-export default routes;
+const AppRoutes = () => {
+  const routes = useRoutes([
+    {
+      path: "/",
+      element: <Navigate to="/admin/dashboard" />,
+    },
+
+    ...adminRoutes,
+    ...clientRoutes,
+    ...technicianRoutes,
+  ]);
+
+  return routes;
+};
+
+export default AppRoutes;

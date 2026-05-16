@@ -1,11 +1,30 @@
-import Dashboard from "../admin/pages/Dashboard.jsx";
-import Users from "../admin/pages/Users.jsx";
-import Settings from "../admin/pages/Settings.jsx";
-import Reports from "../admin/pages/Reports.jsx";
+import Dashboard from "../admin/pages/Dashboard";
+import Users from "../admin/pages/Users";
+import Settings from "../admin/pages/Settings";
+import Reports from "../admin/pages/Reports";
+import AdminLayout from "../admin/layouts/AdminLayout";
 
 export const adminRoutes = [
-  { path: "/admin", element: Dashboard },
-  { path: "/admin/users", element: Users },
-  { path: "/admin/settings", element: Settings },
-  { path: "/admin/reports", element: Reports },
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+      {
+        path: "reports",
+        element: <Reports />,
+      },
+    ],
+  },
 ];

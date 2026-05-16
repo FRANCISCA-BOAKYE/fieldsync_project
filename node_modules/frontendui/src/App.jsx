@@ -1,8 +1,8 @@
-import React from "react";
-import Profile from "./technician/pages/Profile.jsx";
+import AppRoutes from "./routes";
 
-const App = () => {
-  return <Profile />;
-};
+function App() {
+  return <AppRoutes />;
+}
+
 
 export default App;
