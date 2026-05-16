@@ -1,4 +1,7 @@
 /* Tailwind entry point placeholder for this scaffold. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .sr-only {
   position: absolute;

@@ -1,7 +1,10 @@
-export default function Dashboard() {
+import StatCard from "../components/StatCard";
+function Dashboard() {
   return (
-    <section>
-      <h1>Dashboard</h1>
-    </section>
+    <div>
+      <StatCard />
+    </div>
   );
 }
+
+export default Dashboard;
