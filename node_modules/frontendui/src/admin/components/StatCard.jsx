@@ -39,5 +39,17 @@ function StatCard({
 }) {
   //expression for accessing the value from coloutmap
   const c = COLOUR_MAP[color] ?? COLOUR_MAP.blue;
+  return (
+    // styling the card to make it responsive if its is clikable
+    <div
+      onClick={onClick}
+      className={`relative bg-white rounded-xl border border-gray-100 overflow-hidden transition-all duration-150 ${onClick ? "cursor-pointer hover:shadow-md hover:border-gray-200" : ""}`}
+    >
+      <div className={`h-1 w-full ${c.bar}`} />
+      <div className="p-5">
+        <div className="flex items-start justify-between mb-3"></div>
+      </div>
+    </div>
+  );
 }
 export default StatCard;
